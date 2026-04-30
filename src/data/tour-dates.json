@@ -1,0 +1,26 @@
+[
+  {
+    "city": "Chicago",
+    "theatre": "The Chicago Theatre",
+    "dates": "May 9–11, 2026",
+    "link": "https://example.com/tickets/chicago"
+  },
+  {
+    "city": "Los Angeles",
+    "theatre": "The Greek Theatre",
+    "dates": "May 23–24, 2026",
+    "link": "https://example.com/tickets/la"
+  },
+  {
+    "city": "Austin",
+    "theatre": "Moody Amphitheater",
+    "dates": "June 6, 2026",
+    "link": "https://example.com/tickets/austin"
+  },
+  {
+    "city": "Brooklyn",
+    "theatre": "Brooklyn Steel",
+    "dates": "June 20–21, 2026",
+    "link": "https://example.com/tickets/brooklyn"
+  }
+]
