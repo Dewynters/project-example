@@ -1,1 +1,95 @@
 @import "tailwindcss";
+
+@layer base {
+	body {
+		@apply font-sans antialiased text-neutral-800;
+		text-rendering: optimizeLegibility;
+	}
+
+	h1 {
+		@apply text-balance text-3xl leading-tight font-semibold tracking-tight text-neutral-900 md:text-4xl;
+		@apply mt-8 mb-5 first:mt-0 md:mb-6;
+	}
+
+	h2 {
+		@apply text-pretty text-xl leading-snug font-semibold text-neutral-900 md:text-2xl;
+		@apply mt-8 mb-4 first:mt-0;
+	}
+
+	h3 {
+		@apply text-lg leading-snug font-semibold text-neutral-900;
+		@apply mt-8 mb-3 first:mt-0;
+	}
+
+	h4 {
+		@apply text-base leading-snug font-semibold text-neutral-900;
+		@apply mt-8 mb-3 first:mt-0;
+	}
+
+	h5,
+	h6 {
+		@apply text-sm leading-snug font-semibold tracking-wide text-neutral-800 uppercase;
+		@apply mb-2;
+	}
+
+	p {
+		@apply text-base leading-relaxed text-neutral-700;
+	}
+
+	p + p {
+		@apply mt-4;
+	}
+
+	ul,
+	ol {
+		@apply my-4 text-neutral-700;
+	}
+
+	ul {
+		@apply list-inside list-disc;
+	}
+
+	nav ul {
+		@apply m-0 list-none p-0;
+	}
+
+	ol {
+		@apply list-inside list-decimal;
+	}
+
+	ul ul,
+	ul ol,
+	ol ul,
+	ol ol {
+		@apply my-2 ml-4;
+	}
+
+	a:not([class]) {
+		@apply text-indigo-600 underline decoration-indigo-200 underline-offset-[3px] transition-colors hover:text-indigo-800 hover:decoration-indigo-400;
+	}
+
+	strong {
+		@apply font-semibold text-neutral-900;
+	}
+
+	em {
+		@apply italic text-neutral-800;
+	}
+
+	blockquote {
+		@apply border-l-4 border-indigo-200 text-pretty text-neutral-600 italic;
+		padding-left: 1rem;
+	}
+
+	code {
+		@apply rounded bg-neutral-100 px-1.5 py-0.5 font-mono text-[0.92em] text-neutral-900;
+	}
+
+	pre {
+		@apply my-4 overflow-x-auto rounded-lg border border-neutral-200 bg-neutral-50 p-4 text-sm leading-relaxed text-neutral-800;
+	}
+
+	pre code {
+		@apply bg-transparent p-0 text-current;
+	}
+}
